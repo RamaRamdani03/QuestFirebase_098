@@ -12,5 +12,6 @@ fun FormMahasiswa(
     errorState: FormErrorState = FormErrorState(),
     modifier: Modifier = Modifier
 ) {
-
+    val jenisKelamin = listOf("Laki-laki", "Perempuan")
+    val kelas = listOf("A", "B", "C", "D", "E")
 }
