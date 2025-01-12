@@ -35,7 +35,15 @@ class HomeViewModel (private val mhs: MahasiswaRepository): ViewModel() {
                         HomeUiState.Success(it)
                     }
                 }
-
+        }
+    }
+    fun deleteMhs(mahasiswa: Mahasiswa){
+        viewModelScope.launch {
+            try {
+                mhs.deleteMahasiswa(mahasiswa)
+            } catch (e: Exception){
+                mhsUiState = HomeUiState.Error(e)
+            }
         }
     }
 }
