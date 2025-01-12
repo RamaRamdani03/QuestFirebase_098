@@ -46,7 +46,7 @@ fun HomeScreen(
     Scaffold(
         modifier = modifier,
         topBar = {
-            TopAppBar(title = { Text("Homr")})
+            TopAppBar(title = { Text("Home")})
         },
         floatingActionButton = {
             FloatingActionButton(
