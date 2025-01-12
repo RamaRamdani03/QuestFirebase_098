@@ -1,6 +1,8 @@
 package com.example.firebasepam.ui.view
 
 import FormErrorState
+import FormState
+import InsertUiState
 import MahasiswaEvent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -18,6 +20,17 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+
+@Composable
+fun InsertBodyMhs(
+    modifier: Modifier = Modifier,
+    onValueChange: (MahasiswaEvent) -> Unit,
+    uiState: InsertUiState,
+    onClick: () -> Unit,
+    homeUiState: FormState
+) {
+
+}
 
 @Composable
 fun FormMahasiswa(
