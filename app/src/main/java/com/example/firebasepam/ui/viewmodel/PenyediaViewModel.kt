@@ -1,5 +1,6 @@
 package com.example.firebasepam.ui.viewmodel
 
+import InsertViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
@@ -11,6 +12,8 @@ object PenyediaViewModel {
     object PenyediaViewModel {
         val Factory = viewModelFactory {
             initializer { HomeViewModel(
+                aplikasiKontak().container.mahasiswaRepository) }
+            initializer { InsertViewModel(
                 aplikasiKontak().container.mahasiswaRepository) }
         }
     }
